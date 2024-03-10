@@ -1,7 +1,7 @@
 
 <p align='center'><img src='https://github.com/Spelis/CatSh/assets/152774420/4ae3f3ef-253c-434f-8784-6d798a3ab9a2' width='250'></p>
 <p align='center'>
-  <a href="about:blank">Forum Page</a>
+  <a href="https://scratch.mit.edu/discuss/topic/746867/?page=1#post-7853753">Forum Page</a>
   •
   <a href="https://github.com/Spelis/CatSh/wiki/">Wiki</a>
 </p>
