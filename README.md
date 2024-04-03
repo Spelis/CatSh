@@ -24,3 +24,10 @@ CatSh is a compiled language that compiles to a scratch .sb3 file.
 * added the compiler
 * added variable support
 * added converting to .sb3 file (compiling basically)
+
+# Screenshots and showcases:
+## say for seconds block on stage:
+(says undefined for a split second when run)
+
+![image](https://github.com/Spelis/CatSh/assets/152774420/d7a33592-ca35-4954-9fd7-ed87c2c12190)
+
