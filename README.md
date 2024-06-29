@@ -15,7 +15,7 @@ CatSh is a compiled language that compiles to a scratch .sb3 file.
 # Running:
   * open a shell (`cmd`, `powershell`, `bash`, `zsh`, `sh`, etc..)
   * navigate to the folder where the python compilation script is located
-  * run `python main.py compile {path to .catsh file}
+  * run `python main.py compile {path to .catsh file}`
   * import the output.sb3 file into scratch and enjoy!
   * NOTE: there may be some duplicate blocks when importing. that is not done by the script instead is done by scratch. if you know a fix, please let me know.
 
