@@ -9,24 +9,26 @@
 
 </p>
 
-CatSh is a compiled language that compiles to a scratch .sb3 file.
+CatSh is a custom language that gets converted to a scratch .sb3 file.
 
 # What you'll need:
   * `python`
   * wave python module
 
 # Running:
-  * open a shell (`cmd`, `powershell`, `bash`, `zsh`, `sh`, etc..)
+  * open a shell
   * navigate to the folder where the python compilation script is located
-  * run `python main.py compile {path to .catsh file}`
+  * run `python main.py convert {path to .catsh file}`
   * import the output.sb3 file into scratch and enjoy!
-  * NOTE: there may be some duplicate blocks when importing. that is not done by the script instead is done by scratch. if you know a fix, please let me know.
+  * NOTE: there may be some duplicate blocks when importing. that is not done by the converter instead is done by scratch. if you know a fix, please [let me know](https://github.com/Spelis/CatSh/issues?q=sort%3Aupdated-desc+is%3Aissue+is%3Aopen).
 
 # Changelog:
 ## Version 1.0:
 * added the compiler
 * added variable support
 * added converting to .sb3 file (compiling basically)
+* added all blocks
+* blocks in blocks (weird syntax)
 
 # Screenshots and showcases:
 ## say for seconds block on stage: (Apr 3)
@@ -34,11 +36,11 @@ CatSh is a compiled language that compiles to a scratch .sb3 file.
 
 ![image](https://github.com/Spelis/CatSh/assets/152774420/d7a33592-ca35-4954-9fd7-ed87c2c12190)
 
-## warning messages in compiler: (June 29)
+## warning messages in converter: (June 29)
 
 ![image](https://github.com/Spelis/CatSh/assets/152774420/8720ea2f-b708-4058-aab5-6e0b253e33b5)
 
-## colorized compiler output: (June 30)
+## colorized converter output: (June 30)
 
 ![image](https://github.com/Spelis/CatSh/assets/152774420/dbe01dec-6baa-47ae-a31d-1caeb3458ba9)
 

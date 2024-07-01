@@ -116,7 +116,7 @@ def blockEval(block, target):
             f = '\n'.join(f)
             exec(f)
         
-if sys.argv[1] == 'compile':
+if sys.argv[1] == 'convert':
     for f in range(len(inputfile)):
         i = inputfile[f]
         if inputfile[f:f+2] == '/*':
@@ -258,6 +258,6 @@ if sys.argv[1] == 'compile':
     else:
         print("\x1b[32m✅ No Warnings")
     print('\x1b[0m',end='')
-    print('📦 Compiled in ' + str((end-start)))
+    print('📦 Convertd in ' + str((end-start)))
 
 
