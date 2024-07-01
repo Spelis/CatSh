@@ -1,0 +1,8 @@
+*.catsh
+output
+*.sb3
+*.png
+*.wav
+*.svg
+.vscode/
+.idea/
