@@ -1,5 +1,5 @@
 
-<p align='center'><img src='https://github.com/Spelis/CatSh/assets/152774420/4ae3f3ef-253c-434f-8784-6d798a3ab9a2' width='250'></p>
+<p align='center'><img src='https://github.com/Spelis/CatSh/assets/152774420/733c7b39-2e41-4fdd-91fd-1b8372f8bfa3' width='250'></p>
 <p align='center'>
   <a href="https://discord.gg/bBu63vKZxm">Discord</a>
   •
