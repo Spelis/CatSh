@@ -1,146 +1,144 @@
-makeInputs,block,target = print, "", "" # this line is ignored, just for vscode
-
-#* Motion
-makeInputs(block,target,"motion_movesteps",["STEPS"], [])
-makeInputs(block,target,"motion_turnright",["DEGREES"], [])
-makeInputs(block,target,"motion_turnleft",["DEGREES"], [])
-makeInputs(block,target,"motion_goto", ["TO"], [])
-makeInputs(block,target,"motion_gotoxy",["X","Y"], [])
-makeInputs(block,target,"motion_glideto", ["SECS","TO"], [])
-makeInputs(block,target,"motion_glidesecstoxy",["SECS","X","Y"], [])
-makeInputs(block,target,"motion_pointindirection",["DIRECTION"], [])
-makeInputs(block,target,"motion_pointtowards",["TOWARDS"], [])
-makeInputs(block,target,"motion_changexby",["DX"], [])
-makeInputs(block,target,"motion_changeyby",["DY"], [])
-makeInputs(block,target,"motion_setx",["X"], [])
-makeInputs(block,target,"motion_sety",["Y"], [])
-makeInputs(block,target,"motion_ifonedgebounce",[], [])
-makeInputs(block,target,"motion_setrotationstyle",["STYLE"], [])
-makeInputs(block,target,"motion_xposition",[], [])
-makeInputs(block,target,"motion_yposition",[], [])
-makeInputs(block,target,"motion_direction",[], [])
-
-#* Looks
-makeInputs(block,target,"looks_sayforsecs",["MESSAGE","SECS"], [])
-makeInputs(block,target,"looks_say",["MESSAGE"], [])
-makeInputs(block,target,"looks_thinkforsecs",["MESSAGE","SECS"], [])
-makeInputs(block,target,"looks_think",["MESSAGE"], [])
-makeInputs(block,target,"looks_switchcostumeto",["COSTUME"], [])
-makeInputs(block,target,"looks_nextcostume",[], [])
-makeInputs(block,target,"looks_switchbackdropto",["BACKDROP"], [])
-makeInputs(block,target,"looks_switchbackdroptoandwait",["BACKDROP"], [])
-makeInputs(block,target,"looks_nextbackdrop",[], [])
-makeInputs(block,target,"looks_changesizeby",["CHANGE"], [])
-makeInputs(block,target,"looks_setsizeto",["SIZE"], [])
-makeInputs(block,target,"looks_changeeffectby",["CHANGE"], ["EFFECT"])
-makeInputs(block,target,"looks_seteffectto",["VALUE"], ["EFFECT"])
-makeInputs(block,target,"looks_cleargraphiceffects",[], [])
-makeInputs(block,target,"looks_show",[], [])
-makeInputs(block,target,"looks_hide",[], [])
-makeInputs(block,target,"looks_gotofrontback",[], ["FRONT_BACK"])
-makeInputs(block,target,"looks_goforwardbackwardlayers",["NUM"], ["FORWARD_BACKWARD"])
-makeInputs(block,target,"looks_costumenumbername",[], ["NUMBER_NAME"])
-makeInputs(block,target,"looks_backdropnumbername",[], ["NUMBER_NAME"])
-makeInputs(block,target,"looks_size",[], [])
-
-#* Sounds
-makeInputs(block,target,"sound_playuntildone",["SOUND_MENU"], [])
-makeInputs(block,target,"sound_play",["SOUND_MENU"], [])
-makeInputs(block,target,"sound_stopallsounds",[], [])
-makeInputs(block,target,"sound_changeeffectby",["VALUE"], ["EFFECT"])
-makeInputs(block,target,"sound_seteffectto",["VALUE"], ["EFFECT"])
-makeInputs(block,target,"sound_cleareffects",[], [])
-makeInputs(block,target,"sound_changevolumeby",["VOLUME"], [])
-makeInputs(block,target,"sound_setvolumeto",["VOLUME"], [])
-makeInputs(block,target,"sound_volume",[], [])
-
-#* Events
-makeInputs(block,target,"event_whenflagclicked",[], [])
-makeInputs(block,target,"event_whenkeypressed",["KEY_OPTION"], [])
-makeInputs(block,target,"event_whenthisspriteclicked",[], [])
-makeInputs(block,target,"event_whenstageclicked",[], [])
-makeInputs(block,target,"event_whenbackdropswitchesto",[], ["BACKDROP"])
-makeInputs(block,target,"event_whengreaterthan",["VALUE"], ["WHENGREATERTHANMENU"])
-makeInputs(block,target,"event_whenbroadcastreceived",[], ["BROADCAST_OPTION"])
-makeInputs(block,target,"event_broadcast",["BROADCAST_INPUT"], [])
-makeInputs(block,target,"event_broadcastandwait",["BROADCAST_INPUT"], [])
-
-#* Control
-makeInputs(block,target,"control_wait",["DURATION"], [])
-makeInputs(block,target,"control_repeat",["TIMES","SPECIAL.BLOCK"], [])
-makeInputs(block,target,"control_forever",["SPECIAL.BLOCK"], [])
-makeInputs(block,target,"control_if", ["CONDITION","SPECIAL.BLOCK"], [])
-makeInputs(block,target,"control_if_else", ["CONDITION","SPECIAL.BLOCK","SPECIAL.BLOCK2"], [])
-makeInputs(block,target,"control_wait_until", ["CONDITION"], [])
-makeInputs(block,target,"control_repeat_until", ["CONDITION","SPECIAL.BLOCK"], [])
-makeInputs(block,target,"control_stop", ["STOP_OPTION"], [])
-makeInputs(block,target,"control_start_as_clone",[], [])
-makeInputs(block,target,"control_create_clone_of", ["CLONE_OPTION"], [])
-makeInputs(block,target,"control_delete_this_clone", [], [])
-
-#* Sensing
-makeInputs(block,target,"sensing_touchingobject",["TOUCHINGOBJECTMENU"], [])
-makeInputs(block,target,"sensing_touchingcolor",["COLOR"], [])
-makeInputs(block,target,"sensing_coloristouchingcolor",["COLOR","COLOR2"], [])
-makeInputs(block,target,"sensing_distanceto",["DISTANCETOMENU"], [])
-makeInputs(block,target,"sensing_askandwait",["QUESTION"], [])
-makeInputs(block,target,"sensing_answer",[], [])
-makeInputs(block,target,"sensing_keypressed",["KEY_OPTION"], [])
-makeInputs(block,target,"sensing_mousedown",[], [])
-makeInputs(block,target,"sensing_mousex",[], [])
-makeInputs(block,target,"sensing_mousey",[], [])
-makeInputs(block,target,"sensing_setdragmode",["DRAG_MODE"], [])
-makeInputs(block,target,"sensing_loudness",[], [])
-makeInputs(block,target,"sensing_timer",[], [])
-makeInputs(block,target,"sensing_resettimer",[], [])
-makeInputs(block,target,"sensing_of",["PROPERTY","OBJECT"], [])
-makeInputs(block,target,"sensing_current",[], ["CURRENTMENU"])
-makeInputs(block,target,"sensing_dayssince2000",[], [])
-makeInputs(block,target,"sensing_username",[], [])
-
-#* Operators
-makeInputs(block,target,"operator_random",["FROM","TO"], [])
-makeInputs(block,target,"operator_add",["NUM1","NUM2"], [])
-makeInputs(block,target,"operator_subtract",["NUM1","NUM2"], [])
-makeInputs(block,target,"operator_multiply",["NUM1","NUM2"], [])
-makeInputs(block,target,"operator_divide",["NUM1","NUM2"], [])
-makeInputs(block,target,"operator_gt",["OPERAND1","OPERAND2"], [])
-makeInputs(block,target,"operator_lt",["OPERAND1","OPERAND2"], [])
-makeInputs(block,target,"operator_equals",["OPERAND1","OPERAND2"], [])
-makeInputs(block,target,"operator_and",["OPERAND1","OPERAND2"], [])
-makeInputs(block,target,"operator_or",["OPERAND1","OPERAND2"], [])
-makeInputs(block,target,"operator_not",["OPERAND"], [])
-makeInputs(block,target,"operator_join",["STRING1","STRING2"], [])
-makeInputs(block,target,"operator_letter_of",["LETTER","STRING"], [])
-makeInputs(block,target,"operator_length",["STRING"], [])
-makeInputs(block,target,"operator_contains",["STRING1","STRING2"], [])
-makeInputs(block,target,"operator_mod",["STRING1","STRING2"], [])
-makeInputs(block,target,"operator_round",["NUM"], [])
-makeInputs(block,target,"operator_mathop",["NUM","OPERATOR"], [])
-
-#* Variables (Data)
-makeInputs(block,target,"data_setvariableto", ["VARIABLE", "VALUE"], [])
-makeInputs(block,target,"data_changevariableby", ["VARIABLE", "VALUE"], [])
-makeInputs(block,target,"data_showvariable", ["VARIABLE"], [])
-makeInputs(block,target,"data_hidevariable", ["VARIABLE"], [])
-
-makeInputs(block,target,"data_addtolist",["ITEM"], ["LIST"])
-makeInputs(block,target,"data_deleteoflist",["INDEX"], ["LIST"])
-makeInputs(block,target,"data_deletealloflist",[], ["LIST"])
-makeInputs(block,target,"data_insertatlist",["ITEM","INDEX"], ["LIST"])
-makeInputs(block,target,"data_replaceitemoflist",["INDEX","ITEM"], ["LIST"])
-makeInputs(block,target,"data_itemoflist",["INDEX"], ["LIST"])
-makeInputs(block,target,"data_itemnumoflist",["ITEM"], ["LIST"])
-makeInputs(block,target,"data_lengthoflist",[], ["LIST"])
-makeInputs(block,target,"data_listcontainsitem",["ITEM"], ["LIST"])
-makeInputs(block,target,"data_showlist",[], ["LIST"])
-makeInputs(block,target,"data_hidelist",[], ["LIST"])
-
-#* Hidden Blocks
-makeInputs(block,target,"event_whentouchingobject",["WHENTOUCHINGOBJECTMENU"], [])
-makeInputs(block,target,"control_for_each",["VALUE","SPECIAL.BLOCK"], ["VARIABLE"])
-makeInputs(block,target,"control_while",["CONDITION","SPECIAL.BLOCK"], [])
-makeInputs(block,target,"control_get_counter",[], [])
-makeInputs(block,target,"control_incr_counter",[], [])
-makeInputs(block,target,"control_clear_counter",[], [])
-makeInputs(block,target,"control_all_at_once",[], [])
+blockargs = {
+    "motion": {
+        "motion_movesteps": [["steps"], []],
+        "motion_turnright": [["degrees"], []],
+        "motion_turnleft": [["degrees"], []],
+        "motion_goto": [["to"], []],
+        "motion_gotoxy": [["x", "y"], []],
+        "motion_glideto": [["secs", "to"], []],
+        "motion_glidesecstoxy": [["secs", "x", "y"], []],
+        "motion_pointindirection": [["direction"], []],
+        "motion_pointtowards": [["towards"], []],
+        "motion_changexby": [["dx"], []],
+        "motion_changeyby": [["dy"], []],
+        "motion_setx": [["x"], []],
+        "motion_sety": [["y"], []],
+        "motion_ifonedgebounce": [[], []],
+        "motion_setrotationstyle": [["style"], []],
+        "motion_xposition": [[], []],
+        "motion_yposition": [[], []],
+        "motion_direction": [[], []],
+    },
+    "looks": {
+        "looks_sayforsecs": [["MESSAGE", "SECS"], []],
+        "looks_say": [["MESSAGE"], []],
+        "looks_thinkforsecs": [["MESSAGE", "SECS"], []],
+        "looks_think": [["MESSAGE"], []],
+        "looks_switchcostumeto": [["COSTUME"], []],
+        "looks_nextcostume": [[], []],
+        "looks_switchbackdropto": [["BACKDROP"], []],
+        "looks_switchbackdroptoandwait": [["BACKDROP"], []],
+        "looks_nextbackdrop": [[], []],
+        "looks_changesizeby": [["CHANGE"], []],
+        "looks_setsizeto": [["SIZE"], []],
+        "looks_changeeffectby": [["CHANGE"], ["EFFECT"]],
+        "looks_seteffectto": [["VALUE"], ["EFFECT"]],
+        "looks_cleargraphiceffects": [[], []],
+        "looks_show": [[], []],
+        "looks_hide": [[], []],
+        "looks_gotofrontback": [[], ["FRONT_BACK"]],
+        "looks_goforwardbackwardlayers": [["NUM"], ["FORWARD_BACKWARD"]],
+        "looks_costumenumbername": [[], ["NUMBER_NAME"]],
+        "looks_backdropnumbername": [[], ["NUMBER_NAME"]],
+        "looks_size": [[], []],
+    },
+    "sound": {
+        "sound_playuntildone": [["SOUND_MENU"], []],
+        "sound_play": [["SOUND_MENU"], []],
+        "sound_stopallsounds": [[], []],
+        "sound_changeeffectby": [["VALUE"], ["EFFECT"]],
+        "sound_seteffectto": [["VALUE"], ["EFFECT"]],
+        "sound_cleareffects": [[], []],
+        "sound_changevolumeby": [["VOLUME"], []],
+        "sound_setvolumeto": [["VOLUME"], []],
+        "sound_volume": [[], []],
+    },
+    "event": {
+        "event_whenflagclicked": [[], []],
+        "event_whenkeypressed": [["KEY_OPTION"], []],
+        "event_whenthisspriteclicked": [[], []],
+        "event_whenstageclicked": [[], []],
+        "event_whenbackdropswitchesto": [[], ["BACKDROP"]],
+        "event_whengreaterthan": [["VALUE"], ["WHENGREATERTHANMENU"]],
+        "event_whenbroadcastreceived": [[], ["BROADCAST_OPTION"]],
+        "event_broadcast": [["BROADCAST_INPUT"], []],
+        "event_broadcastandwait": [["BROADCAST_INPUT"], []],
+        "event_whentouchingobject": [["WHENTOUCHINGOBJECTMENU"], []],
+    },
+    "control": {
+        "control_wait": [["DURATION"], []],
+        "control_repeat": [["TIMES", "SUBSTACK"], []],
+        "control_forever": [["SUBSTACK"], []],
+        "control_if": [["CONDITION", "SUBSTACK"], []],
+        "control_if_else": [["CONDITION", "SUBSTACK", "SUBSTACK2"], []],
+        "control_wait_until": [["CONDITION"], []],
+        "control_repeat_until": [["CONDITION", "SUBSTACK"], []],
+        "control_stop": [["STOP_OPTION"], []],
+        "control_start_as_clone": [[], []],
+        "control_create_clone_of": [["CLONE_OPTION"], []],
+        "control_delete_this_clone": [[], []],
+        "control_for_each": [["VALUE", "SUBSTACK"], ["VARIABLE"]],
+        "control_while": [["CONDITION", "SUBSTACK"], []],
+        "control_get_counter": [[], []],
+        "control_incr_counter": [[], []],
+        "control_clear_counter": [[], []],
+        "control_all_at_once": [[], []],
+    },
+    "sensing": {
+        "sensing_touchingobject": [["TOUCHINGOBJECTMENU"], []],
+        "sensing_touchingcolor": [["COLOR"], []],
+        "sensing_coloristouchingcolor": [["COLOR", "COLOR2"], []],
+        "sensing_distanceto": [["DISTANCETOMENU"], []],
+        "sensing_askandwait": [["QUESTION"], []],
+        "sensing_answer": [[], []],
+        "sensing_keypressed": [["KEY_OPTION"], []],
+        "sensing_mousedown": [[], []],
+        "sensing_mousex": [[], []],
+        "sensing_mousey": [[], []],
+        "sensing_setdragmode": [["DRAG_MODE"], []],
+        "sensing_loudness": [[], []],
+        "sensing_timer": [[], []],
+        "sensing_resettimer": [[], []],
+        "sensing_of": [["PROPERTY", "OBJECT"], []],
+        "sensing_current": [[], ["CURRENTMENU"]],
+        "sensing_dayssince2000": [[], []],
+        "sensing_username": [[], []],
+    },
+    "operator": {
+        "operator_random": [["FROM", "TO"], []],
+        "operator_add": [["NUM1", "NUM2"], []],
+        "operator_subtract": [["NUM1", "NUM2"], []],
+        "operator_multiply": [["NUM1", "NUM2"], []],
+        "operator_divide": [["NUM1", "NUM2"], []],
+        "operator_gt": [["OPERAND1", "OPERAND2"], []],
+        "operator_lt": [["OPERAND1", "OPERAND2"], []],
+        "operator_equals": [["OPERAND1", "OPERAND2"], []],
+        "operator_and": [["OPERAND1", "OPERAND2"], []],
+        "operator_or": [["OPERAND1", "OPERAND2"], []],
+        "operator_not": [["OPERAND"], []],
+        "operator_join": [["STRING1", "STRING2"], []],
+        "operator_letter_of": [["LETTER", "STRING"], []],
+        "operator_length": [["STRING"], []],
+        "operator_contains": [["STRING1", "STRING2"], []],
+        "operator_mod": [["STRING1", "STRING2"], []],
+        "operator_round": [["NUM"], []],
+        "operator_mathop": [["NUM"], ["OPERATOR"]],
+    },
+    "data": {
+        "data_setvariableto": [["VALUE"], ["VARIABLE"]],
+        "data_changevariableby": [["VALUE"], ["VARIABLE"]],
+        "data_showvariable": [[], ["VARIABLE"]],
+        "data_hidevariable": [[], ["VARIABLE"]],
+        "data_addtolist": [["ITEM"], ["LIST"]],
+        "data_deleteoflist": [["INDEX"], ["LIST"]],
+        "data_deletealloflist": [[], ["LIST"]],
+        "data_insertatlist": [["ITEM", "INDEX"], ["LIST"]],
+        "data_replaceitemoflist": [["INDEX", "ITEM"], ["LIST"]],
+        "data_itemoflist": [["INDEX"], ["LIST"]],
+        "data_itemnumoflist": [["ITEM"], ["LIST"]],
+        "data_lengthoflist": [[], ["LIST"]],
+        "data_listcontainsitem": [["ITEM"], ["LIST"]],
+        "data_showlist": [[], ["LIST"]],
+        "data_hidelist": [[], ["LIST"]],
+    },
+}

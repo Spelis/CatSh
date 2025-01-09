@@ -18,7 +18,7 @@ CatSh is a custom language that gets converted to a scratch .sb3 file.
 # Running:
   * open a shell
   * navigate to the folder where the python compilation script is located
-  * run `python main.py convert {path to .catsh file}`
+  * run `python main.py {path to .catsh file}`
   * import the output.sb3 file into scratch and enjoy!
   * NOTE: there may be some duplicate blocks when importing. that is not done by the converter instead is done by scratch. if you know a fix, please [let me know](https://github.com/Spelis/CatSh/issues?q=sort%3Aupdated-desc+is%3Aissue+is%3Aopen).
 

@@ -6,3 +6,4 @@ output
 *.svg
 .vscode/
 .idea/
+env/
